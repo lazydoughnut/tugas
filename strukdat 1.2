@@ -1,0 +1,34 @@
+// Nama  : Qurany N.T
+// Kelas : 2KS3
+// NIM   : 222313323
+// penugasan modul struktur data pertemuan 1 nomor 2
+
+#include<stdio.h>
+
+//deklarasi fungsi
+float hitungluas (float panjang, float lebar){
+    return panjang*lebar;
+}
+
+float hitungkeliling (float panjang, float lebar){
+    return 2*(panjang + lebar);
+}
+
+//main program
+int main(){
+    float panjang, lebar, luas, keliling;
+
+    printf("Program Luas dan Keliling Persegi Panjang\n");
+    printf("Masukkan Panjang = ");
+    scanf ("%f", &panjang);
+    printf("Masukkan Lebar   = ");
+    scanf ("%f", &lebar);
+
+    luas = hitungluas(panjang, lebar);
+    keliling = hitungkeliling(panjang, lebar);
+
+    printf("Luas persegi panjang     = %.2f\n", luas);
+    printf("Keliling persegi panjang = %.2f\n", keliling);
+
+    return 0;
+}

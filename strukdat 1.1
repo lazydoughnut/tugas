@@ -1,0 +1,44 @@
+// Nama  : Qurany N.T
+// Kelas : 2KS3
+// NIM   : 222313323
+// penugasan modul struktur data pertemuan 1 nomor 1
+
+#include <stdio.h>
+
+int main() {
+    char nim [10];
+    char nama [20];
+    float nilaikuis;
+    float nilaiuts;
+    float nilaiuas;
+    float nilaiakhir;
+
+    printf("=====Program nilai akhir Mahasiswa=====\n");
+
+
+    //Input data
+    printf("\nMasukkan NIM anda           : ");
+    scanf("%s", &nim);
+    printf("Masukkan nama anda          : ");
+    scanf("%s", &nama);
+    printf("Masukkan nilai Kuis anda    : ");
+    scanf("%f", &nilaikuis);
+    printf("Masukkan nilai UTS anda     : ");
+    scanf("%f", &nilaiuts);
+    printf("Masukkan nilai UAS anda     : ");
+    scanf("%f", &nilaiuas);
+
+    //Rumus menghitung nilai akhir
+    nilaiakhir = (0.2*nilaikuis) + (0.3*nilaiuts) + (0.5*nilaiuas);
+
+    //Output data
+    printf("\n============Data  Mahasiswa============\n");
+    printf("NIM           : %s\n", nim);
+    printf("Nama          : %s\n", nama);
+    printf("Nilai kuis    : %.2f\n", nilaikuis);
+    printf("Nilai UTS     : %.2f\n", nilaiuts);
+    printf("Nilai UAS     : %.2f\n", nilaiuas);
+    printf("Nilai akhir   : %.2f\n", nilaiakhir);
+
+    return 0;
+}
